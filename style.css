@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1440px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+}
+
+h1{
+    line-height: 40px;
+}
+
+.new{
+    background: hsl(240, 100%, 5%);
+    color: #ccc;
+    width: 26rem;
+    height: 27rem;
+    margin-top: 1.5rem;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.last-cards{
+      display: flex;
+      margin-left: 5rem;
+      width: 72rem;
+  }
+
+button{
+    padding-top: 40px;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+.menu-btn {
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.my-image{
+    width: 40rem;
+    height: 20rem;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.red{
+    margin-left: 41.5rem;
+}
+
+.first{
+    width: 40rem;
+    margin-left: 5rem;
+    margin-top: 1.5rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50rem 9rem;
+    /* margin: 0; */
+}
+
+.attribution{
+    text-align: center;
+}
+
+.attribution a{
+    color: blue;
+}
+
+ .fl-card{
+      display: flex;
+      gap: 10px;
+      /* margin: 10px; */
+  }
+
+  .sl-card{
+      display: flex;
+      gap: 10px;
+      /* margin: 10px; */
+  }
+
+  .tl-card{
+      display: flex;
+      gap: 10px;
+      /* margin: 10px; */
+  }
+
+  .first-text{
+      display: flex;
+      gap: 10px;
+      line-height: 20px;
+  }
+
+  .f-btn{
+      background: rgb(226, 90, 113);
+      width: 120px;
+      height: 40px;
+      text-align: center;
+      padding: 10px;
+  }
+
+
+
+.top{
+    display: flex;
+    text-align: center;
+    margin-left: 4.6rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 500px) {
+    /* .nav{
+        display: flex;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+    } */
+    .menu-btn{
+        display: block;
+        position: absolute;
+        left: 25rem;
+    }
+
+    body{
+        font-family: 'Inter', sans-serif;
+    }
+    .menu-btn {
+    display: block;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+  .navbar ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: 50px fit-content;
+    border-right: #ccc 1px solid;
+    opacity: 0.8;
+    padding: 30px;
+    transform: translateX(-20px);
+    transform: translateX(-500px);
+    transition: transform 0s ease-in-out;
+  }
+
+  .navbar ul.main-menu li {
+    padding: 100px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px; 
+  }
+
+  .navbar ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .navbar ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+
+  .navbar .main-menu {
+    display: none;
+  }
+
+  .red{
+      margin: 0;
+  }
+
+  .new{
+      background: hsl(240, 100%, 5%);
+      color: #ccc;
+      width: 25rem;
+      padding: 10px;
+      margin: 20px;
+      height: 30rem;
+  }
+
+  .my-image{
+      width: 25rem;
+      box-shadow: 1px 1px 1px 1px lightgray;
+  }
+
+  .first{
+      width: 25rem;
+      padding: 10px;
+      margin: 10px;
+  }
+
+  .container{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .last-cards{
+      display: grid;
+      margin: 10px;
+      width: 26rem;
+  }
+
+  .fl-card{
+      display: flex;
+      gap: 10px;
+      margin: 10px;
+  }
+
+  .sl-card{
+      display: flex;
+      gap: 10px;
+      margin: 10px;
+  }
+
+  .tl-card{
+      display: flex;
+      gap: 10px;
+      margin: 10px;
+  }
+
+  hr{
+      color: #ccc;
+  }
+
+  .top{
+      display: flex;
+      margin-left: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+    .menu-btn{
+        display: block;
+        position: absolute;
+        left: 21rem;
+    }
+
+    body{
+        font-family: 'Inter', sans-serif;
+    }
+    .menu-btn {
+    display: block;
+    }
+
+    .menu-btn:hover {
+        opacity: 0.5;
+    }
+
+  .navbar ul.main-menu {
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: fit-content;
+    border-right: #ccc 1px solid;
+    opacity: 0.8;
+    padding: 10px;
+    transform: translateX(-20px);
+    transform: translateX(-500px);
+    transition: transform 0s ease-in-out;
+  }
+
+  a{
+      color: rgb(9, 34, 179);
+  }
+
+   .f-btn{
+      margin-left: 4.5rem;
+      background: rgb(226, 90, 113);
+      width: 120px;
+      height: 40px;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .navbar ul.main-menu li {
+    padding: 100px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px; 
+  }
+
+  .navbar ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .navbar ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+
+  .navbar .main-menu {
+    display: none;
+  }
+
+  .red{
+      margin: 0;
+  }
+
+  .new{
+      background: hsl(240, 100%, 5%);
+      color: #ccc;
+      width: 20rem;
+      padding: 10px;
+      margin: 20px;
+      height: 30em;
+  }
+
+  .my-image{
+      width: 20rem;
+  }
+
+  .first{
+      width: 22rem;
+      padding: 10px;
+      margin: 10px;
+  }
+
+  .container{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .last-cards{
+      display: grid;
+      margin: 10px;
+      width: 20rem;
+  }
+
+  .fl-card{
+      display: flex;
+      gap: 10px;
+      margin: 10px;
+  }
+
+  .sl-card{
+      display: flex;
+      gap: 10px;
+      margin: 10px;
+  }
+
+  .tl-card{
+      display: flex;
+      gap: 10px;
+      margin: 10px;
+  }
+
+  hr{
+      color: #ccc;
+  }
+
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top{
+      display: flex;
+      gap: 26rem;
+  }
+}
