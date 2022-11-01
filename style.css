@@ -40,7 +40,9 @@ h3,h4{
     font-size: 1.5rem;
 }
 p{
-   font-size: 1.5em;
+   font-size: 15px;
+   color: hsl(233, 8%, 50%);
+   letter-spacing: 2px;
 }
 h4{
    margin-bottom: 25px;
@@ -69,9 +71,6 @@ li:hover{
     color: hsl(236, 13%, 42%);
     text-transform: capitalize;
     padding-left: 20px;
-
-
-
 }
 
 main{
@@ -81,7 +80,8 @@ main{
 }
 .head-img{
     width: 715px;
-    height: 500px;
+    height: 400px;
+    margin-top: 20px;
 }
 
 .img1{
@@ -95,12 +95,14 @@ main{
     padding: 50px;
     grid-column: 3/4;
     grid-row: 1/3;
+    height: fit-content;
+    margin-top: 20px;
 }
 .text,.txt{
    padding: 20px 0;
 }
 .first-text{
-    font-size: 2rem;
+    font-size: 25px;
     grid-column: 1/2;
     grid-row: 2/3;
 }
@@ -121,28 +123,36 @@ main{
     text-transform: uppercase;
     letter-spacing: 5px;
 }
+
+.pic{
+    width: 70px;
+    height: 7.5rem;
+}
+
 .link a:hover{
     background: #00001A;
 }
-.retro{
+.list-retro{
     grid-column: -4/-3;
     grid-row: 3/4; 
+    display: flex;
+    gap: 20px;
 }
-.laptops{
+.list-laptops{
     grid-column: -3/-2;
     grid-row: 3/4;
+    display: flex;
+    gap: 20px;
 }
-.gaming{
+.list-gaming{
     grid-column: -2/-1;
     grid-row:3/4;
-}
-.list{
     display: flex;
     gap: 20px;
 }
 
-.list img{
-    height: 60%;
+.list-img{
+    height: 50%;
 }
 .line{
     border: 1px solid hsl(36, 100%, 99%);
@@ -163,6 +173,7 @@ main{
 .list h2{
     color: hsl(233, 8%, 79%);
    } 
+
 @media (max-width:500px){
      main{
         display: block;
@@ -183,7 +194,7 @@ main{
         width: 340px;
         height: 400px;
     }
-    .headimg{
+    .head-img{
         width: 100%;
         height: 100%;
     }
@@ -196,7 +207,6 @@ main{
         flex-basis: auto;
         align-items: center;
         justify-content: center;
-        
     }
    
     .menu ul.main-menu{
@@ -231,11 +241,8 @@ main{
     }
    
    .a,.b,.c{
-    /* padding-left: 15px; */
-     margin-top: 10px;
+    margin-top: 10px;
     padding: 0 7px;
-   
-
    }
    .pic{
     width:100%;
@@ -252,7 +259,7 @@ main{
     font-weight: 700;
    } 
    
-   .list img{
+   .list-img{
     width: 100px;
     height:130px;
     margin-top: 10px;
